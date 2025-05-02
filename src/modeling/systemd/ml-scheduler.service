@@ -1,0 +1,17 @@
+[Unit]
+Description=ML Pipeline Scheduler Service
+After=network.target
+
+[Service]
+Type=simple
+User=mluser
+Group=mluser
+WorkingDirectory=/opt/ml-pipeline
+ExecStart=/usr/bin/python3 src/modeling/scheduler.py --config /etc/ml-pipeline/scheduler_config.json
+Restart=always
+RestartSec=10
+StandardOutput=append:/var/log/ml-pipeline/scheduler.log
+StandardError=append:/var/log/ml-pipeline/scheduler.error.log
+
+[Install]
+WantedBy=multi-user.target 
