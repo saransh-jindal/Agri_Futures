@@ -1,0 +1,20 @@
+{
+    "daily_execution": {
+        "enabled": true,
+        "time": "00:00"
+    },
+    "weekly_execution": {
+        "enabled": true,
+        "day": "monday",
+        "time": "00:00"
+    },
+    "monthly_execution": {
+        "enabled": true,
+        "day": "1",
+        "time": "00:00"
+    },
+    "check_interval": 60,
+    "log_level": "INFO",
+    "max_retries": 3,
+    "retry_delay": 300
+} 
