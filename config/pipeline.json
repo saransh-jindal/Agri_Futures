@@ -1,0 +1,36 @@
+{
+    "data": {
+        "ndvi_dir": "data/ndvi",
+        "futures_file": "data/futures.csv",
+        "sequence_length": 30,
+        "train_split": 0.8,
+        "val_split": 0.1
+    },
+    "model": {
+        "cnn_filters": 32,
+        "lstm_units": 64,
+        "dense_units": 32,
+        "dropout_rate": 0.2,
+        "learning_rate": 0.001,
+        "min_lr": 0.00001
+    },
+    "training": {
+        "epochs": 100,
+        "batch_size": 32,
+        "patience": 10
+    },
+    "prediction": {
+        "horizon": 7,
+        "confidence_interval": 0.95
+    },
+    "dashboard": {
+        "host": "0.0.0.0",
+        "port": 8050,
+        "refresh_interval": 5
+    },
+    "logging": {
+        "level": "INFO",
+        "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        "file": "logs/pipeline.log"
+    }
+} 
