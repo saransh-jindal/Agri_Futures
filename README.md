@@ -15,8 +15,8 @@ A machine learning pipeline that combines NDVI (Normalized Difference Vegetation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ml-pipeline.git
-cd ml-pipeline
+git clone https://github.com/saransh-jindal/Agri_Futures.git
+cd Agri_Futures
 ```
 
 2. Install dependencies:
